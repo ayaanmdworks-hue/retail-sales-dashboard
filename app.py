@@ -23,9 +23,9 @@ server = app.server
 app.layout = html.Div([
     html.H1("Retail Sales & Customer Intelligence Dashboard", style={'textAlign': 'center'}),
     html.Div([
-        html.Div([html.H3(f"Rs {total_revenue:,.0f}"), html.P("Total Revenue")], style={'textAlign': 'center', 'width': '33%'}),
+        html.Div([html.H3(f"£{total_revenue:,.0f}"), html.P("Total Revenue")], style={'textAlign': 'center', 'width': '33%'}),
         html.Div([html.H3(f"{total_customers:,}"), html.P("Total Customers")], style={'textAlign': 'center', 'width': '33%'}),
-        html.Div([html.H3(f"Rs {avg_order_value:,.2f}"), html.P("Avg Order Value")], style={'textAlign': 'center', 'width': '33%'}),
+        html.Div([html.H3(f"£{avg_order_value:,.2f}"), html.P("Avg Order Value")], style={'textAlign': 'center', 'width': '33%'}),
     ], style={'display': 'flex', 'justifyContent': 'space-around', 'margin': '20px'}),
     dcc.Graph(figure=fig_trend),
     dcc.Graph(figure=fig_products),
